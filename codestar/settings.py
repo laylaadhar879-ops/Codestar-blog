@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "=N*l6qV$EvqxUyBOuSt&&QYrWe#vlvm2@ZTM(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['codestar-blogg.herokuapp.com'] 
+ALLOWED_HOSTS = ['codestar-blogg-1f00c7442900.herokuapp.com']
 
 # Application definition
 
