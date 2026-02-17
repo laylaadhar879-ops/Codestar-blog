@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+from django.contrib.messages import constants as messages
 import dj_database_url
 
 if os.path.isfile('env.py'):
@@ -51,6 +52,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary_storage',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
@@ -59,6 +61,7 @@ INSTALLED_APPS = [
     'crispy_bootstrap5',
     'blog',
     'django_summernote',
+    'cloudinary',
     'about',
 ]
 
@@ -172,6 +175,11 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+
+MESSAGE_TAGS = {
+    messages.SUCCESS: 'alert-success',
+    messages.ERROR: 'alert-danger',
+}
 
 
 # Static files (CSS, JavaScript, Images)
